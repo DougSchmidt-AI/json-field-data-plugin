@@ -37,7 +37,7 @@ artifacts:
 deploy:
   - provider: GitHub
     tag: v$(APPVEYOR_BUILD_VERSION)
-    release: HydstraGauging plugin $(APPVEYOR_BUILD_VERSION)
+    release: JSON field data plugin $(APPVEYOR_BUILD_VERSION)
     description: ''
     artifact: ThePlugin
     auth_token: $(GITHUB_AUTH_TOKEN)
