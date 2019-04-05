@@ -13,7 +13,8 @@ An AQTS field data plugin for AQTS 2018.4-or-newer systems, which can read JSON 
 
 The JSON content supported by this plugin is the [AppendedResults](./src/JsonFieldData/AppendedResults.cs) document DTO.
 
-This is the same JSON format produced by the [PluginTester.exe /Json=outputPath](https://github.com/AquaticInformatics/aquarius-field-data-framework/blob/master/src/PluginTester/Readme.md#saving-json-results) option
+This is the same JSON format produced by the [PluginTester.exe /Json=outputPath](https://github.com/AquaticInformatics/aquarius-field-data-framework/blob/master/src/PluginTester/Readme.md#saving-json-results) option.
+
 ## Requirements for building the plugin from source
 
 - Requires Visual Studio 2017 (Community Edition is fine)
