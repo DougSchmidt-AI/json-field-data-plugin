@@ -78,6 +78,9 @@ namespace JsonFieldData
 
             public T GetObject<T>(string propertyName) where T : class
             {
+                if (!HasProperty(propertyName))
+                    return null;
+
                 var jsonText = JsonObject
                     .Child(propertyName);
 
@@ -86,13 +89,20 @@ namespace JsonFieldData
 
             public T Get<T>(string propertyName)
             {
+                if (!HasProperty(propertyName))
+                    return default(T);
+
                 return JsonObject[propertyName]
                     .FromJson<T>();
             }
 
             public void AddItems<T>(string propertyName, ICollection<T> collection)
             {
-                foreach (var item in GetObject<List<T>>(propertyName))
+                var items = GetObject<List<T>>(propertyName);
+
+                if (items == null) return;
+
+                foreach (var item in items)
                 {
                     collection.Add(item);
                 }
