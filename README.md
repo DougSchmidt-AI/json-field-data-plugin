@@ -15,6 +15,8 @@ The JSON content supported by this plugin is the [AppendedResults](./src/JsonFie
 
 This is the same JSON format produced by the [PluginTester.exe /Json=outputPath](https://github.com/AquaticInformatics/aquarius-field-data-framework/blob/master/src/PluginTester/Readme.md#saving-json-results) option.
 
+See [here](./src/JsonFieldData/Readme.md) for more info on the JSON document format.
+
 ## Requirements for building the plugin from source
 
 - Requires Visual Studio 2017 (Community Edition is fine)
